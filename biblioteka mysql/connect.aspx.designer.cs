@@ -7,12 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace biblioteka_mysql
-{
+namespace biblioteka_mysql {
 
 
-    public partial class connect
-    {
+    public partial class connect {
 
         /// <summary>
         /// form1 control.
@@ -130,5 +128,14 @@ namespace biblioteka_mysql
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button bConnect;
+
+        /// <summary>
+        /// lInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lInfo;
     }
 }

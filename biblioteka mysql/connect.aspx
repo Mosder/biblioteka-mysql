@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Connect to db</title>
     <style>
         #inputs {
             display: grid;
@@ -28,7 +28,8 @@
             <asp:Label ID="lPassword" runat="server" Text="Password"></asp:Label>
             <asp:TextBox ID="iPassword" runat="server"></asp:TextBox>
         </div>
-        <asp:Button ID="bConnect" runat="server" Text="Connect" OnClick="bConnect_Click" />
+        <asp:Button ID="bConnect" runat="server" Text="Connect" OnClick="bConnect_Click" /><br />
+        <asp:Label ID="lInfo" runat="server" Text="Nie udało się połączyć" Visible="false" ForeColor="Red"></asp:Label>
     </form>
 </body>
 </html>

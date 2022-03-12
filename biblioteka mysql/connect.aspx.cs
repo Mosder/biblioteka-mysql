@@ -11,8 +11,12 @@ namespace biblioteka_mysql
 
         protected void bConnect_Click(object sender, EventArgs e) {
             Session["conn"] = conn();
+            string[] columns = { "Id", "Authors", "Title", "ReleaseDate", "ISBN", "Format", "Pages", "Description" };
+            foreach (string column in columns) {
+                Session["search" + column] = "";
+            }
             if (Session["conn"] != null)
-                Response.Redirect("view.aspx");
+                Response.Redirect("login.aspx");
         }
 
         private MySqlConnection conn() {
@@ -30,6 +34,7 @@ namespace biblioteka_mysql
             }
             catch {
                 System.Diagnostics.Debug.WriteLine("Error");
+                lInfo.Visible = true;
             }
             return null;
         }

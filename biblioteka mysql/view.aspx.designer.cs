@@ -31,6 +31,24 @@ namespace biblioteka_mysql {
         protected global::System.Web.UI.WebControls.Button bAddBook;
 
         /// <summary>
+        /// bSearchBooks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button bSearchBooks;
+
+        /// <summary>
+        /// bClearFilters control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button bClearFilters;
+
+        /// <summary>
         /// books control.
         /// </summary>
         /// <remarks>

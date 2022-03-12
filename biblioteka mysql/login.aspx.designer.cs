@@ -7,12 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace biblioteka_mysql
-{
+namespace biblioteka_mysql {
 
 
-    public partial class login
-    {
+    public partial class login {
 
         /// <summary>
         /// form1 control.
@@ -31,6 +29,24 @@ namespace biblioteka_mysql
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lHeader;
+
+        /// <summary>
+        /// lEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lEmail;
+
+        /// <summary>
+        /// iEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox iEmail;
 
         /// <summary>
         /// lLogin control.
@@ -76,5 +92,23 @@ namespace biblioteka_mysql
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button bLogin;
+
+        /// <summary>
+        /// bChange control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button bChange;
+
+        /// <summary>
+        /// lInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lInfo;
     }
 }

@@ -10,14 +10,17 @@ namespace biblioteka_mysql
 {
     public partial class add : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
+        protected void Page_Load(object sender, EventArgs e) {
+            if (Session["conn"] == null) {
+                Response.Redirect("connect.aspx");
+            }
+            else if (Session["log"] == null) {
+                Response.Redirect("login.aspx");
+            }
         }
         private bool addBook(string authors, string title, string releaseDate, string isbn,
             string format, int pages, string description) {
             MySqlCommand command = (Session["conn"] as MySqlConnection).CreateCommand();
-            System.Diagnostics.Debug.WriteLine(authors, title, releaseDate, isbn, format, pages, description);
             try {
                 command.CommandText = "INSERT INTO `books`(`Authors`, `Title`, `ReleaseDate`, `ISBN`, `Format`, `Pages`, `Description`) " +
                     $"VALUES('{authors}', '{title}', '{releaseDate}', '{isbn}', '{format}', {pages}, '{description}')";
